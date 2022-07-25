@@ -39,5 +39,20 @@ void printStr() {
 int main()
 {
 	printStr();
+	bool check = true;
+	while (check) {
+		string promt;
+		cin.get();
+		system("cls");
+		cout << "\nRepeat? y/n\n";
+		promt = cin.get();
+		if (promt == "y") {
+			cin.get();
+			system("cls");
+			printStr();
+		}
+		else
+			check = false;
+	}
 }
 
